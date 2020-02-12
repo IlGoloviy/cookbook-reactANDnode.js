@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin&display=swap&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic');
+
+.header {
+  font-family: 'Pangolin', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 38px;
+  color: #2a625c;
+}
+
+.add-recipe-btn {
+  background: inherit;
+  padding: 15px 50px;
+  border: 3px solid #2a625c;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #2a625c;
+  text-decoration: none;
+}
+
+.add-recipe-btn:hover {
+  background: #2a625c;
+  color: #fff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.recipe-block {
+  box-shadow: 2px 2px 5px 0px rgba(42,98,92,1);
+  width: 21%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.recipe-block > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.recipe-block > a > h4 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-recipe-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 145px);
+}
+
+.add-recipe-block > input,
+.add-recipe-block > textarea {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: 'Amatic SC', cursive;
+  width: 30%;
+}
+
+.add-recipe-block > input:focus,
+.add-recipe-block > textarea:focus {
+  outline: 1px solid #2a625c;
+}
+
+.add-recipe-block > textarea {
+  height: 150px;
+}
+
+.edit_add-btn,
+.cansel-btn {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: none;
+  background: #2a625c;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cansel-btn {
+  margin-right: 5px;
+  color: #2a625c;
+  background: #fff;
+  padding: 4px 9px;
+  border: 1px solid #2a625c;
+  box-sizing: border-box;
+}
+
+.go-home {
+  
+}
