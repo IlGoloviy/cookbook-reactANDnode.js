@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://192.168.99.100:32768/cooking', {useUnifiedTopology: true, useNewUrlParser: true});
 
-const Recipe = require('./models/recipe');
+const Recipe = require('./src/models/recipe');
 
 const app = express();
 
@@ -44,12 +44,6 @@ app.post('/edit', async (req, res) => {
   const recipes = await Recipe.find();
   res.send(recipes);
 });
-
-// app.post('/delete', async (req, res) => {
-//   await Recipe.deleteOne({_id: req.body.id});
-
-//   res.redirect('/tasks');
-// });
 
 app.listen(8080, () => {
   console.log('Server has been started!');
