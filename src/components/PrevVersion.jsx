@@ -25,12 +25,14 @@ class PrevVersion extends React.Component {
         const recipe = this.props.recipe;
         const actualRecipe = <Recipe props={recipe} key={recipe._id} />;
         const oldRecipes = recipe.version.map((recipe, key) => {
-          return <Recipe props={recipe} key={key} />
+          return <Recipe props={recipe} key={key}>old-recipe</Recipe>
         }).reverse();
         
         return (
           <>
-          <Link to="/" onClick={() => this.goHome()} className="go-home"> до головної</Link>
+          <Link to="/" onClick={() => this.goHome()}>
+            <button className="go-home">до головної</button>
+          </Link>
           <div className="Container">
             {actualRecipe}
             {oldRecipes}
