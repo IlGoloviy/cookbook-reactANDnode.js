@@ -1,4 +1,4 @@
-# test application on *React* vs *Node.js* for BinaryStudio
+# cookbook on *React* and *Node.js* for BinaryStudio
 
 ### follow these commands to start the front-end part (виконайте наступні команди для запуску фронтендової частини):
 
